@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FrequencyChartController">
+   <children>
+      <LineChart fx:id="chart" legendSide="TOP" prefHeight="577.0" prefWidth="813.0">
+        <xAxis>
+          <NumberAxis fx:id="iterationFrequencyAxis" autoRanging="false" label="Iteration" lowerBound="1.0" minorTickCount="0" side="BOTTOM" tickUnit="1.0" upperBound="12.0" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="frequencyAxis" label="Frequency" side="LEFT" tickUnit="1.0" upperBound="60.0" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>
